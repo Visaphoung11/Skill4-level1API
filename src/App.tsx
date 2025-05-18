@@ -8,7 +8,6 @@ import Users from "./pages/Users";
 // import Cart from "./pages/Card";
 import { CartProvider } from "./pages/CardContext"; // Import CartProvider
 
-
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibility
 
@@ -91,7 +90,6 @@ function App() {
           {/* Add more routes as needed */}
         </Routes>
         {/* Footer */}
-        
       </div>
     </CartProvider>
   );

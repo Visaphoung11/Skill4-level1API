@@ -39,7 +39,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   return (
-    <div className="w-full max-w-xs m-4">
+    <div onClick={handleViewDetails} className="w-full max-w-xs m-4">
       <div className="bg-white rounded-lg overflow-hidden shadow-lg ring-4 ring-red-500 ring-opacity-40 h-full flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
         {/* Product Image */}
         <div className="relative h-48 w-full bg-white flex items-center justify-center">
@@ -79,7 +79,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               <span className="font-bold text-lg">
                 ${product.price.toFixed(2)}
               </span>
-              
             </div>
             <div className="text-center">
               <button
